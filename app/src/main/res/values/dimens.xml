@@ -1,3 +1,6 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size_joke">18sp</dimen>
+    <dimen name="main_image_size">100dp</dimen>
+
 </resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "365509575442",
+    "firebase_url": "https://chuck-jokes-8f57a.firebaseio.com",
+    "project_id": "chuck-jokes-8f57a",
+    "storage_bucket": "chuck-jokes-8f57a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365509575442:android:6d757020e5fffe64",
+        "android_client_info": {
+          "package_name": "com.akamahesh.chuckjokes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365509575442-p1ttfuqd0lfdb1tc2v6j4jf4dqjt7ugn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akamahesh.chuckjokes",
+            "certificate_hash": "2f7f79a32f1ce1d413212d247dd8a8ad36e7cd15"
+          }
+        },
+        {
+          "client_id": "365509575442-fgrg1juh01ta2vtpsmqmg9bb7rtsfsl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_oQNJLFwEaMlmEt1oS8hQcVdLwPY5MFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365509575442-fgrg1juh01ta2vtpsmqmg9bb7rtsfsl8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

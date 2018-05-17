@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Chuck-Jokes</string>
     <string name="action_settings">Settings</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1420316870349784~3857789151</string>
+    <string name="invitation_title">Chuck-Jokes</string>
+    <string name="invitation_message">Get free Chuck Norris Jokes to put a smile on your face..:)</string>
+    <string name="invitation_custom_image">https://assets.chucknorris.host/img/avatar/chuck-norris.png</string>
+
+    <string name="invitation_deep_link">https://z9dn5.app.goo.gl</string>
+    <string name="invitation_cta">Chuck-Jokes</string>
 </resources>
