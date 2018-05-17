@@ -2,7 +2,7 @@ Chuck-Jokes :rocket:
 ===========
 Android app for random Chuck Norris Jokes :sparkles: :tada:
 
-![](https://i.imgur.com/ddyoOQb.gif)
+![](https://i.imgur.com/ddyoOQb.gif =250x)
 
 ### Todo
 
