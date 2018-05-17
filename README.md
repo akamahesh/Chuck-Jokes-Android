@@ -19,12 +19,12 @@ Third party Libraries that are used in this project.
 
 | Library | Links |
 | ------ | ------ |
-| Retrofit | [http://square.github.io/retrofit/][PlDb] |
-| Gson | [https://github.com/google/gson][PlGh] |
-| OkHttp | [https://github.com/square/okhttp][PlGd] |
-| FabProgressCircle | [https://github.com/JorgeCastilloPrz/FABProgressCircle][PlOd] |
-| picasso | [http://square.github.io/picasso/][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+| Retrofit | [http://square.github.io/retrofit/] |
+| Gson | [https://github.com/google/gson] |
+| OkHttp | [https://github.com/square/okhttp] |
+| FabProgressCircle | [https://github.com/JorgeCastilloPrz/FABProgressCircle] |
+| picasso | [http://square.github.io/picasso/] |
+| Google Analytics | [plugins/googleanalytics/README.md] |
 
 
 Firebase Libraries that are used in this project.
