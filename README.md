@@ -21,7 +21,7 @@ Third party Libraries that are used in this project.
 | ------ | ------ |
 | Retrofit | [http://square.github.io/retrofit/] |
 | Gson | [https://github.com/google/gson] |
-| OkHttp | [https://github.com/square/okhttp] |
+| OkHttp | [https://github.com/square/okhttp]|
 | FabProgressCircle | [https://github.com/JorgeCastilloPrz/FABProgressCircle] |
 | picasso | [http://square.github.io/picasso/] |
 | Google Analytics | [plugins/googleanalytics/README.md] |
