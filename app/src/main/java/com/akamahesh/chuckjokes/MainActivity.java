@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.v4.app.ShareCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -16,10 +16,8 @@ import android.widget.TextView;
 
 import com.akamahesh.chuckjokes.model.Joke;
 import com.akamahesh.chuckjokes.network.APIManager;
-import com.akamahesh.chuckjokes.network.APIRequestHelper;
 import com.github.jorgecastilloprz.FABProgressCircle;
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.appinvite.AppInviteInvitation;
 import com.squareup.picasso.Picasso;
@@ -27,8 +25,6 @@ import com.squareup.picasso.Picasso;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
     private TextView mJokeTextView;
     private ImageView mChuckImageView;
     private FABProgressCircle fabProgressCircle;
-    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +44,7 @@ public class MainActivity extends AppCompatActivity {
         mJokeTextView = findViewById(R.id.tv_joke);
         fabProgressCircle = findViewById(R.id.fabProgressCircle);
         mChuckImageView = findViewById(R.id.iv_main_image);
-        mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,6 +85,22 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent, REQUEST_INVITE);
     }
 
+    private void onInvite() {
+        String joke = mJokeTextView.getText().toString().trim();
+        String appURL = "https://play.google.com/store/apps/details?id=com.akamahesh.chuckjokes";
+        String shareText  = joke + " For More jokes checkout  "+appURL;
+        ShareCompat.IntentBuilder
+                .from(this)
+                .setText(shareText)
+                .setType("text/plain")
+                .setChooserTitle("Share ChuckJokes with your friends")
+                .startChooser();
+    }
+
+    private void onAbout(){
+        startActivity(AboutActivity.getIntent(this));
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -124,12 +133,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-
-        if (id == R.id.action_settings) {
-            onInviteClicked();
-            return true;
+        switch (id){
+            case R.id.action_invite:
+                onInvite();
+                break;
+            case R.id.action_about:
+                onAbout();
+                break;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }
